@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+<link rel="stylesheet" href="style.css"> <!--link arquivo CSS-->
+<script src="fabric.js"></script> <!--link arquivo fabrics.js-->
+<!--link Bootstrap presente nas linhas 8, 10 e 12-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="bodyBackground"> <!--a class bodyBackground adicionamos o background à página HTML-->
+	<center>
+		<h2 class="btn-primary">MINECRAFT</h2> <!--class bootstrap btn-primary adicionará um fundo azul com a fonte em branco-->
+
+		<div id="headInfo" class="btn-danger"> <!--class bootstrap btn-danger adicionará um fundo vermelho com a fonte em branco-->
+			<!--nas linhas 23 e 24 foram adicionadas duas tags span dentro as tags H3, para mostrar a width e height dos blocos
+			na tela, enquanto aumentamos ou diminuímos.-->
+			<h3>Largura atual  = <span id="currentWidth">30</span></h3>
+			<h3>Altura atual  = <span id="currentHeight">30</span></h3>
+		</div>
+
+		<canvas width="1000" height="600" id="myCanvas"></canvas>
+
+	</center>
+	<script src="main.js"></script> <!--link arquivo main.js-->
+</body>
+</html>
